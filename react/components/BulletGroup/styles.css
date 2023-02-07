@@ -1,0 +1,11 @@
+.bullet__container {
+    display: flex;
+    overflow: auto;
+}
+
+@media screen and (min-width: 760px) {
+    .bullet__item--image {
+        min-width: 200px;
+        min-height: 150px
+    }
+}
