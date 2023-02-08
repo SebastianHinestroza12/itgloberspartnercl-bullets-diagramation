@@ -5,10 +5,25 @@
       "title" : "Bullets Group",
       "items" : {
         "properties" : {
-
         "image" : {
           "$ref" : "app:vtex.native-types#/definitions/url",
-          "default" : "https://cosonyb2c.vtexassets.com/arquivos/ids/350957/KD-65X80J-1.jpg?v=1762092926",
+          "default" : "",
+          "title"  : "Imagen",
+          "widget" : {
+            "ui:widget" : "image-uploader"
+          }
+        },
+        "imageDiscount" : {
+          "$ref" : "app:vtex.native-types#/definitions/url",
+          "default" : "",
+          "title"  : "Imagen",
+          "widget" : {
+            "ui:widget" : "image-uploader"
+          }
+        },
+        "imageAudio" : {
+          "$ref" : "app:vtex.native-types#/definitions/url",
+          "default" : "",
           "title"  : "Imagen",
           "widget" : {
             "ui:widget" : "image-uploader"
@@ -16,6 +31,21 @@
         },
         "titleBullet" : {
           "title" : "Bullet Title",
+          "$ref" : "app:vtex.native-types#/definitions/text",
+          "default" : ""
+        },
+        "bulletPrice" : {
+          "title" : "Bullet Price",
+          "$ref" : "app:vtex.native-types#/definitions/text",
+          "default" : ""
+        },
+        "bulletBrand" : {
+          "title" : "Bullet Brand",
+          "$ref" : "app:vtex.native-types#/definitions/text",
+          "default" : ""
+        },
+        "bulletDiscount" : {
+          "title" : "Bullet Discount",
           "$ref" : "app:vtex.native-types#/definitions/text",
           "default" : ""
         },
