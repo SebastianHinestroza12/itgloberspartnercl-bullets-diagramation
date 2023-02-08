@@ -4,11 +4,15 @@ import Bullet from "../Bullet"
 
 export const getBulletsAlTSXList = (bullets: BulletsSchema) => (
     bullets.map((bullet: any, index) => {
-        console.log("Mui bullet es", bullet)
         return <Bullet
-            key={index}
-            src={bullet.image}
-            titleBullet={bullet.titleBullet}
+          key={index}
+          imageAudio={ bullet.imageAudio}
+          imageDiscount={bullet.imageDiscount}
+          src={bullet.image}
+          titleBullet={bullet.titleBullet}
+          bulletBrand={ bullet.bulletBrand}
+          bulletPrice={bullet.bulletPrice}
+          bulletDiscount={ bullet.bulletDiscount}
             link={
                 bullet.link
                     ?
