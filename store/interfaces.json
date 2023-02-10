@@ -10,5 +10,29 @@
         }
       }
     }
+  },
+    "list-context.bullet-group2" : {
+    "component": "BulletGroup",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties" : {
+        "bullets" : {
+          "$ref": "app:itgloberspartnercl.bullets-diagramation#/definitions/BulletGroup"
+        }
+      }
+    }
+  },
+    "list-context.bullet-group3" : {
+    "component": "BulletGroup",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties" : {
+        "bullets" : {
+          "$ref": "app:itgloberspartnercl.bullets-diagramation#/definitions/BulletGroup"
+        }
+      }
+    }
   }
 }
