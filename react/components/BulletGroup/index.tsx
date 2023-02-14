@@ -1,5 +1,4 @@
 import React, { Fragment, PropsWithChildren } from "react";
-import { BulletsSchema } from "./BulletTypes";
 //@ts-ignore
 import { useDevice } from "vtex.device-detector";
 //@ts-ignore
@@ -7,10 +6,8 @@ import { useListContext, ListContextProvider } from "vtex.list-context";
 //@ts-ignore
 import { useCssHandles } from "vtex.css-handles"
 import { getBulletsAlTSXList } from "./modules/bulletsAlList";
+import { BulletGroupProps } from "../../interfaces/index";
 
-export interface BulletGroupProps {
-    bullets: BulletsSchema
-}
 
 const BulletGroup = ({
     bullets,
@@ -24,19 +21,19 @@ const BulletGroup = ({
     const CSS_HANDLES = ["bullet__container"]
     const handles = useCssHandles(CSS_HANDLES)
 
-  return (
-      <Fragment>
-        <ListContextProvider list={newListContextValue}>
-            {
-                isMobile ?
-                    <div className={handles.bullet__container}>
-                        {children}
-                    </div>
-                    :
-                    children
-            }
-        </ListContextProvider>
-      </Fragment>
+    return (
+        <Fragment>
+            <ListContextProvider list={newListContextValue}>
+                {
+                    isMobile ?
+                        <div className={handles.bullet__container}>
+                            {children}
+                        </div>
+                        :
+                        children
+                }
+            </ListContextProvider>
+        </Fragment>
     )
 }
 
