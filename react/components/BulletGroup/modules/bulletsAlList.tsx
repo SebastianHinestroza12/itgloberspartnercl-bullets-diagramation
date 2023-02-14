@@ -3,16 +3,16 @@ import { BulletsSchema } from '../../../interfaces/index'
 import Bullet from "../../Bullet/Bullet"
 
 export const getBulletsAlTSXList = (bullets: BulletsSchema) => (
-    bullets.map((bullet: any, index : any) => {
+    bullets.map((bullet: any, index : number) => {
         return <Bullet
             key={index}
-            imageAudio={bullet.imageAudio}
-            imageDiscount={bullet.imageDiscount}
+            imageAudio={bullet.imageAudio ? bullet.imageAudio : ''}
+            imageDiscount={bullet.imageDiscount ? bullet.imageDiscount : ''}
             src={bullet.image}
             titleBullet={bullet.titleBullet}
             bulletBrand={bullet.bulletBrand}
             bulletPrice={bullet.bulletPrice}
-            bulletDiscount={bullet.bulletDiscount}
+            bulletDiscount={bullet.bulletDiscount ? bullet.bulletDiscount : ''}
             link={
                 bullet.link
                     ?
