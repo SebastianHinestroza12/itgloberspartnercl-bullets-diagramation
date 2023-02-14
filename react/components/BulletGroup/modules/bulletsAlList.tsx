@@ -3,7 +3,7 @@ import { BulletsSchema } from '../../../interfaces/index'
 import Bullet from "../../Bullet/Bullet"
 
 export const getBulletsAlTSXList = (bullets: BulletsSchema) => (
-    bullets.map((bullet: any, index : number) => {
+  bullets.map((bullet: any, index: number) => {
         return <Bullet
             key={index}
             imageAudio={bullet.imageAudio ? bullet.imageAudio : ''}

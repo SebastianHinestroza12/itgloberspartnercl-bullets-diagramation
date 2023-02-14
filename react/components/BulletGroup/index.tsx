@@ -1,4 +1,4 @@
-import React, { Fragment, PropsWithChildren } from "react";
+import React, {Fragment, PropsWithChildren } from "react";
 //@ts-ignore
 import { useDevice } from "vtex.device-detector";
 //@ts-ignore
@@ -13,8 +13,9 @@ const BulletGroup = ({
     bullets,
     children
 }: PropsWithChildren<BulletGroupProps>) => {
+  console.log(`Debugging Information : ${children}`)
     const { isMobile } = useDevice();
-    const { list } = useListContext();
+    const { list } = useListContext() || [];
     const bulletsGroup = getBulletsAlTSXList(bullets)
     const newListContextValue = list.concat(bulletsGroup)
 
