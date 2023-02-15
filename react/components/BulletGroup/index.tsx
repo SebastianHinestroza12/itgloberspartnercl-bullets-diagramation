@@ -6,14 +6,14 @@ import { useListContext, ListContextProvider } from "vtex.list-context";
 //@ts-ignore
 import { useCssHandles } from "vtex.css-handles"
 import { getBulletsAlTSXList } from "./modules/bulletsAlList";
-import { BulletGroupProps } from "../../interfaces/index";
+import { BulletGroupProps } from "../../interfaces";
 
 
 const BulletGroup = ({
     bullets,
     children
 }: PropsWithChildren<BulletGroupProps>) => {
-  console.log(`Debugging Information : ${children}`)
+
     const { isMobile } = useDevice();
     const { list } = useListContext() || [];
     const bulletsGroup = getBulletsAlTSXList(bullets)

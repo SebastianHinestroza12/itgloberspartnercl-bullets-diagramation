@@ -4,7 +4,7 @@ import { Link } from "vtex.render-runtime"
 import { Props } from "../../interfaces"
 //@ts-ignore
 import { useCssHandles } from "vtex.css-handles"
-import { CSS_HANDLES } from '../../style/index'
+import { CSS_HANDLES } from '../../style'
 
 
 const Bullet = ({ src, titleBullet, bulletBrand, bulletPrice, bulletDiscount, link, imageDiscount, imageAudio }: Props) => {

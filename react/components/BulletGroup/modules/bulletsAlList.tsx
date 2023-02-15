@@ -1,5 +1,5 @@
 import React from "react"
-import { BulletsSchema } from '../../../interfaces/index'
+import { BulletsSchema } from '../../../interfaces'
 import Bullet from "../../Bullet/Bullet"
 
 export const getBulletsAlTSXList = (bullets: BulletsSchema) => (
