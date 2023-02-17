@@ -3,6 +3,7 @@ export type BulletsSchema = Array<{
     imageAudio?: string
     bulletBrand: string
     bulletPrice: string
+    rating : string
     bulletDiscount?: string
     imageDiscount?: string
     titleBullet: string
@@ -23,6 +24,7 @@ export interface BulletGroupProps {
 
 export interface Props {
     src: string
+    rating : string
     bulletBrand: string
     bulletPrice: string
     bulletDiscount?: string

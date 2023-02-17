@@ -7,7 +7,7 @@ import { useCssHandles } from "vtex.css-handles"
 import { CSS_HANDLES } from '../../style'
 
 
-const Bullet = ({ src, titleBullet, bulletBrand, bulletPrice, bulletDiscount, link, imageDiscount, imageAudio }: Props) => {
+const Bullet = ({ src, titleBullet, bulletBrand, bulletPrice, bulletDiscount, link, imageDiscount, imageAudio, rating }: Props) => {
   const handles = useCssHandles(CSS_HANDLES)
 
   return (
@@ -21,6 +21,7 @@ const Bullet = ({ src, titleBullet, bulletBrand, bulletPrice, bulletDiscount, li
         <p className={handles["bullet__item--title"]}>{titleBullet}</p>
         <div>
           <p className={handles["bullet__item--brand"]}>{bulletBrand}</p>
+          <img src={ rating} alt="Rating Product" />
           <p className={handles["bullet__item--price"]}>{bulletPrice}</p>
           <p className={handles["bullet__discount--text"]}>{bulletDiscount}</p>
         </div>
@@ -49,6 +50,13 @@ Bullet.schema = {
     },
     imageAudio: {
       title: "Imagen de Bullet",
+      type: "string",
+      widget: {
+        "ui:widget": "image-uploader"
+      }
+    },
+    rating: {
+      title: "Rating Product",
       type: "string",
       widget: {
         "ui:widget": "image-uploader"

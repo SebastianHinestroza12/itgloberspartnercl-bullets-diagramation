@@ -21,6 +21,14 @@
             "ui:widget" : "image-uploader"
           }
         },
+        "rating" : {
+          "$ref" : "app:vtex.native-types#/definitions/url",
+          "default" : "",
+          "title"  : "Rating",
+          "widget" : {
+            "ui:widget" : "image-uploader"
+          }
+        },
         "imageAudio" : {
           "$ref" : "app:vtex.native-types#/definitions/url",
           "default" : "",

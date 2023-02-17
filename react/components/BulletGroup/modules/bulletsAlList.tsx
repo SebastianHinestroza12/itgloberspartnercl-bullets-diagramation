@@ -11,6 +11,7 @@ export const getBulletsAlTSXList = (bullets: BulletsSchema) => (
             src={bullet.image}
             titleBullet={bullet.titleBullet}
             bulletBrand={bullet.bulletBrand}
+            rating={ bullet.rating }
             bulletPrice={bullet.bulletPrice}
             bulletDiscount={bullet.bulletDiscount ? bullet.bulletDiscount : ''}
             link={

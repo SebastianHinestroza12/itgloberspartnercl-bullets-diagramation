@@ -34,5 +34,29 @@
         }
       }
     }
+  },
+    "list-context.bullet-group4" : {
+    "component": "BulletGroup",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties" : {
+        "bullets" : {
+          "$ref": "app:itgloberspartnercl.bullets-diagramation#/definitions/BulletGroup"
+        }
+      }
+    }
+  },
+    "list-context.bullet-group5" : {
+    "component": "BulletGroup",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties" : {
+        "bullets" : {
+          "$ref": "app:itgloberspartnercl.bullets-diagramation#/definitions/BulletGroup"
+        }
+      }
+    }
   }
 }
